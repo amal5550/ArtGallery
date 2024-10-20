@@ -3,69 +3,70 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <!-- ImageView to display the artwork -->
-    <ImageView
-        android:id="@+id/artworkImageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/artworkTitleTextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:contentDescription="@string/artwork_image" />
+<ImageView
+android:id="@+id/artworkImageView"
+android:layout_width="0dp"
+android:layout_height="0dp"
+android:layout_marginTop="16dp"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintBottom_toTopOf="@+id/artworkTitleTextView"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+android:contentDescription="@string/artwork_image" />
 
     <!-- TextView for artwork title -->
-    <TextView
-        android:id="@+id/artworkTitleTextView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/artworkImageView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="Artwork Title"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+<TextView
+android:id="@+id/artworkTitleTextView"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="8dp"
+app:layout_constraintTop_toBottomOf="@+id/artworkImageView"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+android:text="Artwork Title"
+android:textSize="18sp"
+android:textStyle="bold" />
 
     <!-- TextView for artwork artist and year -->
-    <TextView
-        android:id="@+id/artworkArtistTextView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        app:layout_constraintTop_toBottomOf="@+id/artworkTitleTextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="Artwork Artist (Year)"
-        android:textSize="16sp" />
+<TextView
+android:id="@+id/artworkArtistTextView"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="4dp"
+app:layout_constraintTop_toBottomOf="@+id/artworkTitleTextView"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+android:text="Artwork Artist (Year)"
+android:textSize="16sp" />
 
     <!-- LinearLayout for navigation buttons (Previous, Next) -->
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/artworkArtistTextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:orientation="horizontal"
-        android:gravity="center">
+<LinearLayout
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+app:layout_constraintTop_toBottomOf="@+id/artworkArtistTextView"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+android:orientation="horizontal"
+android:gravity="center">
 
-        <Button
-            android:id="@+id/previousButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Previous" />
+<Button
+    android:id="@+id/previousButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Previous" />
 
-        <Button
-            android:id="@+id/nextButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="Next" />
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+<Button
+    android:id="@+id/nextButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:text="Next" />
+</LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
